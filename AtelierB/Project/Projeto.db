@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<db_xml>
+    <atelierb version="3_7_ubuntu-cvs" />
+    <project decomp_dir="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\expand_src" old_decomp_dir="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\src">
+        <!-- Definition directory list -->
+        <!-- Component file list -->
+        <component_file path="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB" name="projeto_m" suffix="mch" user="Ricar">
+            <component name="projeto_m" type="specification" />
+        </component_file>
+        <component_file path="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB" name="projeto_m_i" suffix="imp" user="Ricar">
+            <component name="projeto_m_i" type="implementation" />
+        </component_file>
+        <component_file path="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB" name="projeto_m_r" suffix="ref" user="Ricar">
+            <component name="projeto_m_r" type="refinement" />
+        </component_file>
+    </project>
+</db_xml>
