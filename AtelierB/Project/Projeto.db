@@ -7,6 +7,9 @@
         <component_file path="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB" name="projeto_m" suffix="mch" user="Ricar">
             <component name="projeto_m" type="specification" />
         </component_file>
+        <component_file path="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB" name="projeto_m_ctx" suffix="mch" user="Ricar">
+            <component name="projeto_m_ctx" type="specification" />
+        </component_file>
         <component_file path="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB" name="projeto_m_i" suffix="imp" user="Ricar">
             <component name="projeto_m_i" type="implementation" />
         </component_file>
