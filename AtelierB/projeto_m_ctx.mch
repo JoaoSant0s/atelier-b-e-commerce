@@ -4,11 +4,10 @@
  */
 MACHINE
     projeto_m_ctx
-SETS
-    //Remover depoois
-    BOOK ; 
+SETS   
+    USER ; CLIENT ; STORE ; 
+    PRODUCT;
     
-    // Novos
-    USER ; ADMIN; CLIENT ; STORE ; 
-    PRODUCT
+    ADRESS; NAME
+    
 END
