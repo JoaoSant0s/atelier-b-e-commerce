@@ -8,6 +8,7 @@ SETS
     USER ; CLIENT ; STORE ; 
     PRODUCT;
     
-    ADRESS; NAME
+    ADRESS; NAME; DATE; 
+    DESCRIPTION; COLOR; IMAGE
     
 END
