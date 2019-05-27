@@ -5,10 +5,13 @@
 MACHINE
     projeto_m_ctx
 SETS   
-    USER ; CLIENT ; STORE ; 
+    USER ; STORE ; 
     PRODUCT;
+    PROD_CATEGORY;
     
     ADRESS; NAME; DATE; 
-    DESCRIPTION; COLOR; IMAGE
+    DESCRIPTION; COLOR; IMAGE;
+    
+    FORM_PAYMENT
     
 END
