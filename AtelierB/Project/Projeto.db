@@ -13,6 +13,9 @@
         <component_file path="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB" name="projeto_m_i" suffix="imp" user="Ricar">
             <component name="projeto_m_i" type="implementation" />
         </component_file>
+        <component_file path="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB" name="projeto_m_proB" suffix="mch" user="Ricar">
+            <component name="projeto_m_proB" type="specification" />
+        </component_file>
         <component_file path="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB" name="projeto_m_r" suffix="ref" user="Ricar">
             <component name="projeto_m_r" type="refinement" />
         </component_file>

@@ -176,7 +176,7 @@ OPERATIONS
         || store_products := store_products - {(ss |-> store_products(ss))}
     END
     ;
-    // CLIENT (cc=client, dd=date, nn=name)
+    // CLIENT (cc=client, dd=date, nn=name, aa = address, fp = form payment)
     add_client(cc, dd, nn) =
     PRE
         (cc : USER & cc /: clients & cc /: users & cc /= admin0) 
@@ -189,6 +189,8 @@ OPERATIONS
         || client_names := client_names \/ {(cc |-> nn)}
         || client_date := client_date \/ {(cc |-> dd)}
         || carts := carts \/ {(cc |-> {})}
+        || client_addresses(cc) := []    
+        || client_form_payment(cc) := []
     END
     ;
     remove_client(cc, aa) =
@@ -288,6 +290,8 @@ OPERATIONS
         & carts(cc) /= {} & card(carts(cc)) > 0
         & fp : FORM_PAYMENT 
         & add : ADDRESS
+        & card(clients_product_bought(cc)) > 0
+        & card(products) > 0
     THEN
         ANY pp, ss  
         WHERE ss: STORE & ss : stores & pp : PRODUCT & pp : products & pp : dom(carts(cc)) & pp : ran(store_products(ss)) THEN
@@ -314,6 +318,8 @@ OPERATIONS
         & carts(cc) /= {} & card(carts(cc)) > 0
         & card(client_form_payment(cc)) > 0
         & card(client_addresses(cc)) > 0
+        & card(clients_product_bought(cc)) > 0
+        & card(products) > 0
     THEN
         ANY pp, ss  
         WHERE ss: STORE & ss : stores & pp : PRODUCT & pp : products & pp : dom(carts(cc)) & pp : ran(store_products(ss)) THEN
@@ -336,6 +342,7 @@ OPERATIONS
     PRE
         cc : USER & cc : clients & cc : users & logged(cc) = TRUE
         & card(clients_product_bought(cc)) > 0
+        & card(products) > 0
     THEN    
         ANY ii
         WHERE ii : dom(clients_product_bought(cc)) THEN 
