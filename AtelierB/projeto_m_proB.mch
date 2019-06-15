@@ -19,5 +19,6 @@ PROPERTIES
     & card(DESCRIPTION) = 500    
     & card(COLOR) = 500
     & card(IMAGE) = 500
-    & card(FORM_PAYMENT) = 500           
+    & card(FORM_PAYMENT) = 500   
+    
 END

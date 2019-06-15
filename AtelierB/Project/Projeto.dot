@@ -1,12 +1,9 @@
 digraph {
+projeto_m [ label=" projeto_m " shape= box ]
 projeto_m_ctx [ label=" projeto_m_ctx " shape= box ]
-projeto_m_i [ label=" projeto_m\nprojeto_m_i " shape= box ]
 projeto_m_proB [ label=" projeto_m_proB " shape= box ]
-projeto_m_r [ label=" projeto_m\nprojeto_m_r " shape= box ]
 
-"projeto_m_i" -> "projeto_m_ctx" [style= dotted ]
-"projeto_m_r" -> "projeto_m_ctx" [style= dotted ]
+"projeto_m" -> "projeto_m_ctx" [style= dotted ]
 "projeto_m_proB" -> "projeto_m_ctx" [style= dotted ]
-"projeto_m_proB" -> "projeto_m_i" []
-"projeto_m_proB" -> "projeto_m_r" []
+"projeto_m_proB" -> "projeto_m" []
 }

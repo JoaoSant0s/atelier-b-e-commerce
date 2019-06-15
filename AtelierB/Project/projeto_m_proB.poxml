@@ -1,0 +1,3450 @@
+<Proof_Obligations>
+<Define name="B definitions">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Id value="NAT"/>
+<Binary_Exp op="..">
+<Integer_Literal value="0"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id value="INT"/>
+<Binary_Exp op="..">
+<Id value="MININT"/>
+<Id value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="ctx">
+<Attr>
+<Pos l="7" c="1" s="4"/>
+</Attr>
+<Set>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:1:1:1" value="USER">
+<Attr>
+<Pos l="8" c="5" s="4"/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:1:2:1" value="STORE">
+<Attr>
+<Pos l="8" c="12" s="5"/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:1:3:1" value="PRODUCT">
+<Attr>
+<Pos l="9" c="5" s="7"/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id typref="1805217633" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:1:4:1" value="PROD_CATEGORY">
+<Attr>
+<Pos l="10" c="5" s="13"/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id typref="3147958767" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:1:5:1" value="ADDRESS">
+<Attr>
+<Pos l="12" c="5" s="7"/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id typref="1333172640" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:1:6:1" value="NAME">
+<Attr>
+<Pos l="12" c="14" s="4"/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id typref="1901520867" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:1:7:1" value="DATE">
+<Attr>
+<Pos l="12" c="20" s="4"/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id typref="1425327831" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:1:8:1" value="DESCRIPTION">
+<Attr>
+<Pos l="13" c="5" s="11"/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id typref="3494839870" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:1:9:1" value="COLOR">
+<Attr>
+<Pos l="13" c="18" s="5"/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id typref="233640502" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:1:10:1" value="IMAGE">
+<Attr>
+<Pos l="13" c="25" s="5"/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id typref="2105584960" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:1:11:1" value="FORM_PAYMENT">
+<Attr>
+<Pos l="15" c="5" s="12"/>
+</Attr>
+</Id>
+</Set>
+</Define>
+<Define name="seext"/>
+<Define name="lprp">
+<Attr>
+<Pos l="11" c="1" s="10"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="12" c="16" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="12" c="5" s="4"/>
+</Attr>
+<Id typref="178381824" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:1:1:1" value="USER">
+<Attr>
+<Pos l="12" c="10" s="4"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:1:2" value="500">
+<Attr>
+<Pos l="12" c="18" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="13" c="19" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="13" c="7" s="4"/>
+</Attr>
+<Id typref="1417232700" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:2:1:1" value="STORE">
+<Attr>
+<Pos l="13" c="12" s="5"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:2:2" value="500">
+<Attr>
+<Pos l="13" c="21" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="14" c="21" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="14" c="7" s="4"/>
+</Attr>
+<Id typref="462456746" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:3:1:1" value="PRODUCT">
+<Attr>
+<Pos l="14" c="12" s="7"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:3:2" value="500">
+<Attr>
+<Pos l="14" c="23" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="15" c="27" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="15" c="7" s="4"/>
+</Attr>
+<Id typref="1805217633" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:4:1:1" value="PROD_CATEGORY">
+<Attr>
+<Pos l="15" c="12" s="13"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:4:2" value="500">
+<Attr>
+<Pos l="15" c="29" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="16" c="21" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="16" c="7" s="4"/>
+</Attr>
+<Id typref="3147958767" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:5:1:1" value="ADDRESS">
+<Attr>
+<Pos l="16" c="12" s="7"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:5:2" value="500">
+<Attr>
+<Pos l="16" c="23" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="17" c="18" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="17" c="7" s="4"/>
+</Attr>
+<Id typref="1333172640" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:6:1:1" value="NAME">
+<Attr>
+<Pos l="17" c="12" s="4"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:6:2" value="500">
+<Attr>
+<Pos l="17" c="20" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="18" c="18" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="18" c="7" s="4"/>
+</Attr>
+<Id typref="1901520867" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:7:1:1" value="DATE">
+<Attr>
+<Pos l="18" c="12" s="4"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:7:2" value="500">
+<Attr>
+<Pos l="18" c="20" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="19" c="25" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="19" c="7" s="4"/>
+</Attr>
+<Id typref="1425327831" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:8:1:1" value="DESCRIPTION">
+<Attr>
+<Pos l="19" c="12" s="11"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:8:2" value="500">
+<Attr>
+<Pos l="19" c="27" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="20" c="19" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="20" c="7" s="4"/>
+</Attr>
+<Id typref="3494839870" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:9:1:1" value="COLOR">
+<Attr>
+<Pos l="20" c="12" s="5"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:9:2" value="500">
+<Attr>
+<Pos l="20" c="21" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="21" c="19" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="21" c="7" s="4"/>
+</Attr>
+<Id typref="233640502" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:10:1:1" value="IMAGE">
+<Attr>
+<Pos l="21" c="12" s="5"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:10:2" value="500">
+<Attr>
+<Pos l="21" c="21" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="22" c="26" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="22" c="7" s="4"/>
+</Attr>
+<Id typref="2105584960" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:11:1:1" value="FORM_PAYMENT">
+<Attr>
+<Pos l="22" c="12" s="12"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:11:2" value="500">
+<Attr>
+<Pos l="22" c="28" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="inprp">
+<Attr>
+<Pos l="12" c="1" s="10"/>
+</Attr>
+<Exp_Comparison op=":">
+<Attr>
+<Pos l="13" c="12" s="1"/>
+</Attr>
+<Id typref="664455449" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:4:1:1" value="admin0">
+<Attr>
+<Pos l="13" c="5" s="6"/>
+</Attr>
+</Id>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:4:1:2" value="USER">
+<Attr>
+<Pos l="13" c="14" s="4"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Define>
+<Define name="inext">
+<Attr>
+<Pos l="32" c="1" s="9"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="&lt;:" initialTag="users : POW( USER)">
+<Attr>
+<Pos l="33" c="11" s="2"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:1:1" value="users">
+<Attr>
+<Pos l="33" c="5" s="5"/>
+</Attr>
+</Id>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:1:2" value="USER">
+<Attr>
+<Pos l="33" c="14" s="4"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;:" initialTag="admins : POW( users)">
+<Attr>
+<Pos l="34" c="14" s="2"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:2:1" value="admins">
+<Attr>
+<Pos l="34" c="7" s="6"/>
+</Attr>
+</Id>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:2:2" value="users">
+<Attr>
+<Pos l="34" c="17" s="5"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((admins) : (FIN(admins)))">
+<Attr>
+<Pos l="35" c="14" s="1"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:3:1" value="admins">
+<Attr>
+<Pos l="35" c="7" s="6"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN" typref="1587956313">
+<Attr>
+<Pos l="35" c="16" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:3:2:1" value="admins">
+<Attr>
+<Pos l="35" c="20" s="6"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;:" initialTag="clients : POW( users)">
+<Attr>
+<Pos l="36" c="15" s="2"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:4:1" value="clients">
+<Attr>
+<Pos l="36" c="7" s="7"/>
+</Attr>
+</Id>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:4:2" value="users">
+<Attr>
+<Pos l="36" c="18" s="5"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;:" initialTag="store_managers : POW( users)">
+<Attr>
+<Pos l="37" c="22" s="2"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:5:1" value="store_managers">
+<Attr>
+<Pos l="37" c="7" s="14"/>
+</Attr>
+</Id>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:5:2" value="users">
+<Attr>
+<Pos l="37" c="25" s="5"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((logged) : (((users) --&gt; (BOOL))))">
+<Attr>
+<Pos l="38" c="14" s="1"/>
+</Attr>
+<Id typref="169888399" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:6:1" value="logged">
+<Attr>
+<Pos l="38" c="7" s="6"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="837154996">
+<Attr>
+<Pos l="38" c="22" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:6:2:1" value="users">
+<Attr>
+<Pos l="38" c="16" s="5"/>
+</Attr>
+</Id>
+<Id typref="4282494527" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:6:2:2" value="BOOL">
+<Attr>
+<Pos l="38" c="26" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((logged) : (((dom(logged)) +-&gt; (ran(logged)))))">
+<Attr>
+<Pos l="39" c="14" s="1"/>
+</Attr>
+<Id typref="169888399" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:7:1" value="logged">
+<Attr>
+<Pos l="39" c="7" s="6"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="837154996">
+<Attr>
+<Pos l="39" c="28" s="3"/>
+</Attr>
+<Unary_Exp op="dom" typref="178381824">
+<Attr>
+<Pos l="39" c="16" s="3"/>
+</Attr>
+<Id typref="169888399" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:7:2:1:1" value="logged">
+<Attr>
+<Pos l="39" c="20" s="6"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran" typref="4282494527">
+<Attr>
+<Pos l="39" c="32" s="3"/>
+</Attr>
+<Id typref="169888399" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:7:2:2:1" value="logged">
+<Attr>
+<Pos l="39" c="36" s="6"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;:" initialTag="stores : POW( STORE)">
+<Attr>
+<Pos l="41" c="14" s="2"/>
+</Attr>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:8:1" value="stores">
+<Attr>
+<Pos l="41" c="7" s="6"/>
+</Attr>
+</Id>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:8:2" value="STORE">
+<Attr>
+<Pos l="41" c="17" s="5"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;:" initialTag="products : POW( PRODUCT)">
+<Attr>
+<Pos l="42" c="16" s="2"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:9:1" value="products">
+<Attr>
+<Pos l="42" c="7" s="8"/>
+</Attr>
+</Id>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:9:2" value="PRODUCT">
+<Attr>
+<Pos l="42" c="19" s="7"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((products) : (FIN(products)))">
+<Attr>
+<Pos l="43" c="16" s="1"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:10:1" value="products">
+<Attr>
+<Pos l="43" c="7" s="8"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN" typref="464656857">
+<Attr>
+<Pos l="43" c="18" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:10:2:1" value="products">
+<Attr>
+<Pos l="43" c="22" s="8"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((carts) : (((clients) --&gt; (((products) +-&gt; ((NAT-{0})))))))">
+<Attr>
+<Pos l="44" c="13" s="1"/>
+</Attr>
+<Id typref="256571598" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:11:1" value="carts">
+<Attr>
+<Pos l="44" c="7" s="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="931778955">
+<Attr>
+<Pos l="44" c="23" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:11:2:1" value="clients">
+<Attr>
+<Pos l="44" c="15" s="7"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2426748706">
+<Attr>
+<Pos l="44" c="37" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:11:2:2:1" value="products">
+<Attr>
+<Pos l="44" c="28" s="8"/>
+</Attr>
+</Id>
+<Id typref="3603043417" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:11:2:2:2" value="NAT1">
+<Attr>
+<Pos l="44" c="41" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((clients_product_bought) : (((clients) --&gt; (((products) +-&gt; ((NAT-{0})))))))">
+<Attr>
+<Pos l="45" c="30" s="1"/>
+</Attr>
+<Id typref="256571598" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:12:1" value="clients_product_bought">
+<Attr>
+<Pos l="45" c="7" s="22"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="931778955">
+<Attr>
+<Pos l="45" c="40" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:12:2:1" value="clients">
+<Attr>
+<Pos l="45" c="32" s="7"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2426748706">
+<Attr>
+<Pos l="45" c="54" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:12:2:2:1" value="products">
+<Attr>
+<Pos l="45" c="45" s="8"/>
+</Attr>
+</Id>
+<Id typref="3603043417" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:12:2:2:2" value="NAT1">
+<Attr>
+<Pos l="45" c="58" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((store_addresses) : (((stores) --&gt; (ADDRESS))))">
+<Attr>
+<Pos l="48" c="23" s="1"/>
+</Attr>
+<Id typref="1622375369" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:13:1" value="store_addresses">
+<Attr>
+<Pos l="48" c="7" s="15"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="3046043386">
+<Attr>
+<Pos l="48" c="32" s="3"/>
+</Attr>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:13:2:1" value="stores">
+<Attr>
+<Pos l="48" c="25" s="6"/>
+</Attr>
+</Id>
+<Id typref="3147958767" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:13:2:2" value="ADDRESS">
+<Attr>
+<Pos l="48" c="36" s="7"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((store_names) : (((stores) --&gt; (NAME))))">
+<Attr>
+<Pos l="49" c="19" s="1"/>
+</Attr>
+<Id typref="946070850" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:14:1" value="store_names">
+<Attr>
+<Pos l="49" c="7" s="11"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="4263164695">
+<Attr>
+<Pos l="49" c="28" s="3"/>
+</Attr>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:14:2:1" value="stores">
+<Attr>
+<Pos l="49" c="21" s="6"/>
+</Attr>
+</Id>
+<Id typref="1333172640" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:14:2:2" value="NAME">
+<Attr>
+<Pos l="49" c="32" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((store_responsible) : (((stores) --&gt; (USER))))">
+<Attr>
+<Pos l="50" c="25" s="1"/>
+</Attr>
+<Id typref="1875697570" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:15:1" value="store_responsible">
+<Attr>
+<Pos l="50" c="7" s="17"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="3945494711">
+<Attr>
+<Pos l="50" c="34" s="3"/>
+</Attr>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:15:2:1" value="stores">
+<Attr>
+<Pos l="50" c="27" s="6"/>
+</Attr>
+</Id>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:15:2:2" value="USER">
+<Attr>
+<Pos l="50" c="38" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((store_products) : (((stores) --&gt; (seq(PRODUCT)))))">
+<Attr>
+<Pos l="51" c="22" s="1"/>
+</Attr>
+<Id typref="3297020668" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:16:1" value="store_products">
+<Attr>
+<Pos l="51" c="7" s="14"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="1936207111">
+<Attr>
+<Pos l="51" c="31" s="3"/>
+</Attr>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:16:2:1" value="stores">
+<Attr>
+<Pos l="51" c="24" s="6"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="1489605026">
+<Attr>
+<Pos l="51" c="35" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:16:2:2:1" value="PRODUCT">
+<Attr>
+<Pos l="51" c="39" s="7"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((store_bought_products) : (((stores) --&gt; (((products) +-&gt; ((NAT-{0})))))))">
+<Attr>
+<Pos l="52" c="29" s="1"/>
+</Attr>
+<Id typref="1632172156" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:17:1" value="store_bought_products">
+<Attr>
+<Pos l="52" c="7" s="21"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="2729942919">
+<Attr>
+<Pos l="52" c="38" s="3"/>
+</Attr>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:17:2:1" value="stores">
+<Attr>
+<Pos l="52" c="31" s="6"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2426748706">
+<Attr>
+<Pos l="52" c="52" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:17:2:2:1" value="products">
+<Attr>
+<Pos l="52" c="43" s="8"/>
+</Attr>
+</Id>
+<Id typref="3603043417" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:17:2:2:2" value="NAT1">
+<Attr>
+<Pos l="52" c="56" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((client_addresses) : (((clients) --&gt; (seq(ADDRESS)))))">
+<Attr>
+<Pos l="55" c="24" s="1"/>
+</Attr>
+<Id typref="1668877385" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:18:1" value="client_addresses">
+<Attr>
+<Pos l="55" c="7" s="16"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="3205131728">
+<Attr>
+<Pos l="55" c="34" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:18:2:1" value="clients">
+<Attr>
+<Pos l="55" c="26" s="7"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="2825433373">
+<Attr>
+<Pos l="55" c="38" s="3"/>
+</Attr>
+<Id typref="3147958767" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:18:2:2:1" value="ADDRESS">
+<Attr>
+<Pos l="55" c="42" s="7"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((client_names) : (((clients) --&gt; (NAME))))">
+<Attr>
+<Pos l="56" c="20" s="1"/>
+</Attr>
+<Id typref="1263997552" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:19:1" value="client_names">
+<Attr>
+<Pos l="56" c="7" s="12"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="3728010259">
+<Attr>
+<Pos l="56" c="30" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:19:2:1" value="clients">
+<Attr>
+<Pos l="56" c="22" s="7"/>
+</Attr>
+</Id>
+<Id typref="1333172640" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:19:2:2" value="NAME">
+<Attr>
+<Pos l="56" c="34" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((client_date) : (((clients) --&gt; (DATE))))">
+<Attr>
+<Pos l="57" c="19" s="1"/>
+</Attr>
+<Id typref="3624437299" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:20:1" value="client_date">
+<Attr>
+<Pos l="57" c="7" s="11"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="2016678416">
+<Attr>
+<Pos l="57" c="29" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:20:2:1" value="clients">
+<Attr>
+<Pos l="57" c="21" s="7"/>
+</Attr>
+</Id>
+<Id typref="1901520867" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:20:2:2" value="DATE">
+<Attr>
+<Pos l="57" c="33" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((client_form_payment) : (((clients) --&gt; (seq(FORM_PAYMENT)))))">
+<Attr>
+<Pos l="58" c="26" s="1"/>
+</Attr>
+<Id typref="935265508" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:21:1" value="client_form_payment">
+<Attr>
+<Pos l="58" c="7" s="19"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="128536607">
+<Attr>
+<Pos l="58" c="36" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:21:2:1" value="clients">
+<Attr>
+<Pos l="58" c="28" s="7"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="3587644180">
+<Attr>
+<Pos l="58" c="40" s="3"/>
+</Attr>
+<Id typref="2105584960" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:21:2:2:1" value="FORM_PAYMENT">
+<Attr>
+<Pos l="58" c="44" s="12"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((product_description) : (((products) --&gt; (DESCRIPTION))))">
+<Attr>
+<Pos l="61" c="26" s="1"/>
+</Attr>
+<Id typref="547942047" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:22:1" value="product_description">
+<Attr>
+<Pos l="61" c="7" s="19"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="3366728740">
+<Attr>
+<Pos l="61" c="37" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:22:2:1" value="products">
+<Attr>
+<Pos l="61" c="28" s="8"/>
+</Attr>
+</Id>
+<Id typref="1425327831" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:22:2:2" value="DESCRIPTION">
+<Attr>
+<Pos l="61" c="41" s="11"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((product_color) : (((products) --&gt; (COLOR))))">
+<Attr>
+<Pos l="62" c="20" s="1"/>
+</Attr>
+<Id typref="135881862" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:23:1" value="product_color">
+<Attr>
+<Pos l="62" c="7" s="13"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="1593117821">
+<Attr>
+<Pos l="62" c="31" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:23:2:1" value="products">
+<Attr>
+<Pos l="62" c="22" s="8"/>
+</Attr>
+</Id>
+<Id typref="3494839870" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:23:2:2" value="COLOR">
+<Attr>
+<Pos l="62" c="35" s="5"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((product_amount) : (((products) --&gt; ((NAT-{0})))))">
+<Attr>
+<Pos l="63" c="21" s="1"/>
+</Attr>
+<Id typref="2777243425" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:24:1" value="product_amount">
+<Attr>
+<Pos l="63" c="7" s="14"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="2426748706">
+<Attr>
+<Pos l="63" c="32" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:24:2:1" value="products">
+<Attr>
+<Pos l="63" c="23" s="8"/>
+</Attr>
+</Id>
+<Id typref="3603043417" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:24:2:2" value="NAT1">
+<Attr>
+<Pos l="63" c="36" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((product_enable) : (((products) --&gt; (BOOL))))">
+<Attr>
+<Pos l="64" c="21" s="1"/>
+</Attr>
+<Id typref="2128445171" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:25:1" value="product_enable">
+<Attr>
+<Pos l="64" c="7" s="14"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="3436989222">
+<Attr>
+<Pos l="64" c="32" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:25:2:1" value="products">
+<Attr>
+<Pos l="64" c="23" s="8"/>
+</Attr>
+</Id>
+<Id typref="4282494527" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:25:2:2" value="BOOL">
+<Attr>
+<Pos l="64" c="36" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((product_image) : (((products) --&gt; (IMAGE))))">
+<Attr>
+<Pos l="65" c="20" s="1"/>
+</Attr>
+<Id typref="311430270" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:26:1" value="product_image">
+<Attr>
+<Pos l="65" c="7" s="13"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="2535410309">
+<Attr>
+<Pos l="65" c="31" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:26:2:1" value="products">
+<Attr>
+<Pos l="65" c="22" s="8"/>
+</Attr>
+</Id>
+<Id typref="233640502" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:26:2:2" value="IMAGE">
+<Attr>
+<Pos l="65" c="35" s="5"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((product_name) : (((products) --&gt; (NAME))))">
+<Attr>
+<Pos l="66" c="20" s="1"/>
+</Attr>
+<Id typref="3222554324" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:27:1" value="product_name">
+<Attr>
+<Pos l="66" c="7" s="12"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="2032877189">
+<Attr>
+<Pos l="66" c="31" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:27:2:1" value="products">
+<Attr>
+<Pos l="66" c="22" s="8"/>
+</Attr>
+</Id>
+<Id typref="1333172640" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:27:2:2" value="NAME">
+<Attr>
+<Pos l="66" c="35" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((product_category) : (((products) --&gt; (PROD_CATEGORY))))">
+<Attr>
+<Pos l="67" c="23" s="1"/>
+</Attr>
+<Id typref="4133146409" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:28:1" value="product_category">
+<Attr>
+<Pos l="67" c="7" s="16"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="606824858">
+<Attr>
+<Pos l="67" c="34" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:28:2:1" value="products">
+<Attr>
+<Pos l="67" c="25" s="8"/>
+</Attr>
+</Id>
+<Id typref="1805217633" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:28:2:2" value="PROD_CATEGORY">
+<Attr>
+<Pos l="67" c="38" s="13"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Define>
+<Define name="inv"/>
+<Define name="ass"/>
+<Define name="cst"/>
+<Proof_Obligation>
+<Comment>Inclusion dans une machine abstraite</Comment>
+<Tag>InstanciatedConstraintsLemmas</Tag>
+<Tag>CONSTRAINTS</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Goal>
+<Nary_Pred op="&amp;"/>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Comment>Initialisation dans une machine abstraite</Comment>
+<Tag>Initialisation</Tag>
+<Tag>Invariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Sub_Calculus>
+<Nary_Sub op=";">
+<Attr>
+<Pos l="69" c="1" s="14"/>
+</Attr>
+<Nary_Sub op="||">
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:1:1:1" value="users">
+<Attr>
+<Pos l="70" c="5" s="5"/>
+</Attr>
+</Id>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:1:1:2" value="admins">
+<Attr>
+<Pos l="70" c="12" s="6"/>
+</Attr>
+</Id>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:1:1:3" value="store_managers">
+<Attr>
+<Pos l="70" c="20" s="14"/>
+</Attr>
+</Id>
+<Id typref="169888399" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:1:1:4" value="logged">
+<Attr>
+<Pos l="70" c="36" s="6"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:1:2:1">
+<Attr>
+<Pos l="70" c="5" s="5"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:1:2:2">
+<Attr>
+<Pos l="70" c="12" s="6"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:1:2:3">
+<Attr>
+<Pos l="70" c="20" s="14"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:1:2:4">
+<Attr>
+<Pos l="70" c="36" s="6"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:2:1:1" value="products">
+<Attr>
+<Pos l="71" c="8" s="8"/>
+</Attr>
+</Id>
+<Id typref="256571598" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:2:1:2" value="carts">
+<Attr>
+<Pos l="71" c="18" s="5"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:2:2:1">
+<Attr>
+<Pos l="71" c="8" s="8"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:2:2:2">
+<Attr>
+<Pos l="71" c="18" s="5"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:3:1:1" value="stores">
+<Attr>
+<Pos l="72" c="8" s="6"/>
+</Attr>
+</Id>
+<Id typref="1622375369" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:3:1:2" value="store_addresses">
+<Attr>
+<Pos l="72" c="16" s="15"/>
+</Attr>
+</Id>
+<Id typref="946070850" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:3:1:3" value="store_names">
+<Attr>
+<Pos l="72" c="33" s="11"/>
+</Attr>
+</Id>
+<Id typref="1875697570" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:3:1:4" value="store_responsible">
+<Attr>
+<Pos l="72" c="46" s="17"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:3:2:1">
+<Attr>
+<Pos l="72" c="8" s="6"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:3:2:2">
+<Attr>
+<Pos l="72" c="16" s="15"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:3:2:3">
+<Attr>
+<Pos l="72" c="33" s="11"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:3:2:4">
+<Attr>
+<Pos l="72" c="46" s="17"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="3297020668" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:4:1:1" value="store_products">
+<Attr>
+<Pos l="73" c="8" s="14"/>
+</Attr>
+</Id>
+<Id typref="1632172156" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:4:1:2" value="store_bought_products">
+<Attr>
+<Pos l="73" c="24" s="21"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:4:2:1">
+<Attr>
+<Pos l="73" c="8" s="14"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:4:2:2">
+<Attr>
+<Pos l="73" c="24" s="21"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:5:1:1" value="clients">
+<Attr>
+<Pos l="75" c="8" s="7"/>
+</Attr>
+</Id>
+<Id typref="1668877385" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:5:1:2" value="client_addresses">
+<Attr>
+<Pos l="75" c="17" s="16"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:5:2:1">
+<Attr>
+<Pos l="75" c="8" s="7"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:5:2:2">
+<Attr>
+<Pos l="75" c="17" s="16"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="1263997552" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:6:1:1" value="client_names">
+<Attr>
+<Pos l="76" c="8" s="12"/>
+</Attr>
+</Id>
+<Id typref="3624437299" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:6:1:2" value="client_date">
+<Attr>
+<Pos l="76" c="22" s="11"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:6:2:1">
+<Attr>
+<Pos l="76" c="8" s="12"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:6:2:2">
+<Attr>
+<Pos l="76" c="22" s="11"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="256571598" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:7:1:1" value="clients_product_bought">
+<Attr>
+<Pos l="77" c="8" s="22"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:7:2:1">
+<Attr>
+<Pos l="77" c="8" s="22"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="935265508" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:8:1:1" value="client_form_payment">
+<Attr>
+<Pos l="78" c="8" s="19"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:8:2:1">
+<Attr>
+<Pos l="78" c="8" s="19"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="3222554324" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:9:1:1" value="product_name">
+<Attr>
+<Pos l="80" c="8" s="12"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:9:2:1">
+<Attr>
+<Pos l="80" c="8" s="12"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="547942047" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:10:1:1" value="product_description">
+<Attr>
+<Pos l="81" c="8" s="19"/>
+</Attr>
+</Id>
+<Id typref="135881862" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:10:1:2" value="product_color">
+<Attr>
+<Pos l="81" c="29" s="13"/>
+</Attr>
+</Id>
+<Id typref="2777243425" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:10:1:3" value="product_amount">
+<Attr>
+<Pos l="81" c="44" s="14"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:10:2:1">
+<Attr>
+<Pos l="81" c="8" s="19"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:10:2:2">
+<Attr>
+<Pos l="81" c="29" s="13"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:10:2:3">
+<Attr>
+<Pos l="81" c="44" s="14"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+<Simple_Assignement_Sub>
+<Variables>
+<Id typref="2128445171" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:11:1:1" value="product_enable">
+<Attr>
+<Pos l="82" c="8" s="14"/>
+</Attr>
+</Id>
+<Id typref="4133146409" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:11:1:2" value="product_category">
+<Attr>
+<Pos l="82" c="24" s="16"/>
+</Attr>
+</Id>
+<Id typref="311430270" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:11:1:3" value="product_image">
+<Attr>
+<Pos l="82" c="42" s="13"/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:11:2:1">
+<Attr>
+<Pos l="82" c="8" s="14"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:11:2:2">
+<Attr>
+<Pos l="82" c="24" s="16"/>
+</Attr>
+</EmptySet>
+<EmptySet typref="3817003670" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:6:1:11:2:3">
+<Attr>
+<Pos l="82" c="42" s="13"/>
+</Attr>
+</EmptySet>
+</Values>
+</Simple_Assignement_Sub>
+</Nary_Sub>
+<Skip tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:4:1"/>
+</Nary_Sub>
+<Binary_Pred op="=&gt;">
+<Nary_Pred op="&amp;">
+<Attr>
+<Pos l="32" c="1" s="9"/>
+</Attr>
+<Nary_Pred op="&amp;">
+<Exp_Comparison op="&lt;:" initialTag="users : POW( USER)">
+<Attr>
+<Pos l="33" c="11" s="2"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:1:1" value="users">
+<Attr>
+<Pos l="33" c="5" s="5"/>
+</Attr>
+</Id>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:1:2" value="USER">
+<Attr>
+<Pos l="33" c="14" s="4"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;:" initialTag="admins : POW( users)">
+<Attr>
+<Pos l="34" c="14" s="2"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:2:1" value="admins">
+<Attr>
+<Pos l="34" c="7" s="6"/>
+</Attr>
+</Id>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:2:2" value="users">
+<Attr>
+<Pos l="34" c="17" s="5"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((admins) : (FIN(admins)))">
+<Attr>
+<Pos l="35" c="14" s="1"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:3:1" value="admins">
+<Attr>
+<Pos l="35" c="7" s="6"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN" typref="1587956313">
+<Attr>
+<Pos l="35" c="16" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:3:2:1" value="admins">
+<Attr>
+<Pos l="35" c="20" s="6"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;:" initialTag="clients : POW( users)">
+<Attr>
+<Pos l="36" c="15" s="2"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:4:1" value="clients">
+<Attr>
+<Pos l="36" c="7" s="7"/>
+</Attr>
+</Id>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:4:2" value="users">
+<Attr>
+<Pos l="36" c="18" s="5"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;:" initialTag="store_managers : POW( users)">
+<Attr>
+<Pos l="37" c="22" s="2"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:5:1" value="store_managers">
+<Attr>
+<Pos l="37" c="7" s="14"/>
+</Attr>
+</Id>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:5:2" value="users">
+<Attr>
+<Pos l="37" c="25" s="5"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((logged) : (((users) --&gt; (BOOL))))">
+<Attr>
+<Pos l="38" c="14" s="1"/>
+</Attr>
+<Id typref="169888399" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:6:1" value="logged">
+<Attr>
+<Pos l="38" c="7" s="6"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="837154996">
+<Attr>
+<Pos l="38" c="22" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:6:2:1" value="users">
+<Attr>
+<Pos l="38" c="16" s="5"/>
+</Attr>
+</Id>
+<Id typref="4282494527" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:6:2:2" value="BOOL">
+<Attr>
+<Pos l="38" c="26" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((logged) : (((dom(logged)) +-&gt; (ran(logged)))))">
+<Attr>
+<Pos l="39" c="14" s="1"/>
+</Attr>
+<Id typref="169888399" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:7:1" value="logged">
+<Attr>
+<Pos l="39" c="7" s="6"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="837154996">
+<Attr>
+<Pos l="39" c="28" s="3"/>
+</Attr>
+<Unary_Exp op="dom" typref="178381824">
+<Attr>
+<Pos l="39" c="16" s="3"/>
+</Attr>
+<Id typref="169888399" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:7:2:1:1" value="logged">
+<Attr>
+<Pos l="39" c="20" s="6"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Unary_Exp op="ran" typref="4282494527">
+<Attr>
+<Pos l="39" c="32" s="3"/>
+</Attr>
+<Id typref="169888399" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:7:2:2:1" value="logged">
+<Attr>
+<Pos l="39" c="36" s="6"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;:" initialTag="stores : POW( STORE)">
+<Attr>
+<Pos l="41" c="14" s="2"/>
+</Attr>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:8:1" value="stores">
+<Attr>
+<Pos l="41" c="7" s="6"/>
+</Attr>
+</Id>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:8:2" value="STORE">
+<Attr>
+<Pos l="41" c="17" s="5"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;:" initialTag="products : POW( PRODUCT)">
+<Attr>
+<Pos l="42" c="16" s="2"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:9:1" value="products">
+<Attr>
+<Pos l="42" c="7" s="8"/>
+</Attr>
+</Id>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:9:2" value="PRODUCT">
+<Attr>
+<Pos l="42" c="19" s="7"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((products) : (FIN(products)))">
+<Attr>
+<Pos l="43" c="16" s="1"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:10:1" value="products">
+<Attr>
+<Pos l="43" c="7" s="8"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN" typref="464656857">
+<Attr>
+<Pos l="43" c="18" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:10:2:1" value="products">
+<Attr>
+<Pos l="43" c="22" s="8"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((carts) : (((clients) --&gt; (((products) +-&gt; ((NAT-{0})))))))">
+<Attr>
+<Pos l="44" c="13" s="1"/>
+</Attr>
+<Id typref="256571598" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:11:1" value="carts">
+<Attr>
+<Pos l="44" c="7" s="5"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="931778955">
+<Attr>
+<Pos l="44" c="23" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:11:2:1" value="clients">
+<Attr>
+<Pos l="44" c="15" s="7"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2426748706">
+<Attr>
+<Pos l="44" c="37" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:11:2:2:1" value="products">
+<Attr>
+<Pos l="44" c="28" s="8"/>
+</Attr>
+</Id>
+<Id typref="3603043417" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:11:2:2:2" value="NAT1">
+<Attr>
+<Pos l="44" c="41" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((clients_product_bought) : (((clients) --&gt; (((products) +-&gt; ((NAT-{0})))))))">
+<Attr>
+<Pos l="45" c="30" s="1"/>
+</Attr>
+<Id typref="256571598" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:12:1" value="clients_product_bought">
+<Attr>
+<Pos l="45" c="7" s="22"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="931778955">
+<Attr>
+<Pos l="45" c="40" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:12:2:1" value="clients">
+<Attr>
+<Pos l="45" c="32" s="7"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2426748706">
+<Attr>
+<Pos l="45" c="54" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:12:2:2:1" value="products">
+<Attr>
+<Pos l="45" c="45" s="8"/>
+</Attr>
+</Id>
+<Id typref="3603043417" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:12:2:2:2" value="NAT1">
+<Attr>
+<Pos l="45" c="58" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((store_addresses) : (((stores) --&gt; (ADDRESS))))">
+<Attr>
+<Pos l="48" c="23" s="1"/>
+</Attr>
+<Id typref="1622375369" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:13:1" value="store_addresses">
+<Attr>
+<Pos l="48" c="7" s="15"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="3046043386">
+<Attr>
+<Pos l="48" c="32" s="3"/>
+</Attr>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:13:2:1" value="stores">
+<Attr>
+<Pos l="48" c="25" s="6"/>
+</Attr>
+</Id>
+<Id typref="3147958767" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:13:2:2" value="ADDRESS">
+<Attr>
+<Pos l="48" c="36" s="7"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((store_names) : (((stores) --&gt; (NAME))))">
+<Attr>
+<Pos l="49" c="19" s="1"/>
+</Attr>
+<Id typref="946070850" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:14:1" value="store_names">
+<Attr>
+<Pos l="49" c="7" s="11"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="4263164695">
+<Attr>
+<Pos l="49" c="28" s="3"/>
+</Attr>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:14:2:1" value="stores">
+<Attr>
+<Pos l="49" c="21" s="6"/>
+</Attr>
+</Id>
+<Id typref="1333172640" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:14:2:2" value="NAME">
+<Attr>
+<Pos l="49" c="32" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((store_responsible) : (((stores) --&gt; (USER))))">
+<Attr>
+<Pos l="50" c="25" s="1"/>
+</Attr>
+<Id typref="1875697570" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:15:1" value="store_responsible">
+<Attr>
+<Pos l="50" c="7" s="17"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="3945494711">
+<Attr>
+<Pos l="50" c="34" s="3"/>
+</Attr>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:15:2:1" value="stores">
+<Attr>
+<Pos l="50" c="27" s="6"/>
+</Attr>
+</Id>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:15:2:2" value="USER">
+<Attr>
+<Pos l="50" c="38" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((store_products) : (((stores) --&gt; (seq(PRODUCT)))))">
+<Attr>
+<Pos l="51" c="22" s="1"/>
+</Attr>
+<Id typref="3297020668" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:16:1" value="store_products">
+<Attr>
+<Pos l="51" c="7" s="14"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="1936207111">
+<Attr>
+<Pos l="51" c="31" s="3"/>
+</Attr>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:16:2:1" value="stores">
+<Attr>
+<Pos l="51" c="24" s="6"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="1489605026">
+<Attr>
+<Pos l="51" c="35" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:16:2:2:1" value="PRODUCT">
+<Attr>
+<Pos l="51" c="39" s="7"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((store_bought_products) : (((stores) --&gt; (((products) +-&gt; ((NAT-{0})))))))">
+<Attr>
+<Pos l="52" c="29" s="1"/>
+</Attr>
+<Id typref="1632172156" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:17:1" value="store_bought_products">
+<Attr>
+<Pos l="52" c="7" s="21"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="2729942919">
+<Attr>
+<Pos l="52" c="38" s="3"/>
+</Attr>
+<Id typref="1417232700" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:17:2:1" value="stores">
+<Attr>
+<Pos l="52" c="31" s="6"/>
+</Attr>
+</Id>
+<Binary_Exp op="+-&gt;" typref="2426748706">
+<Attr>
+<Pos l="52" c="52" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:17:2:2:1" value="products">
+<Attr>
+<Pos l="52" c="43" s="8"/>
+</Attr>
+</Id>
+<Id typref="3603043417" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:17:2:2:2" value="NAT1">
+<Attr>
+<Pos l="52" c="56" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((client_addresses) : (((clients) --&gt; (seq(ADDRESS)))))">
+<Attr>
+<Pos l="55" c="24" s="1"/>
+</Attr>
+<Id typref="1668877385" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:18:1" value="client_addresses">
+<Attr>
+<Pos l="55" c="7" s="16"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="3205131728">
+<Attr>
+<Pos l="55" c="34" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:18:2:1" value="clients">
+<Attr>
+<Pos l="55" c="26" s="7"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="2825433373">
+<Attr>
+<Pos l="55" c="38" s="3"/>
+</Attr>
+<Id typref="3147958767" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:18:2:2:1" value="ADDRESS">
+<Attr>
+<Pos l="55" c="42" s="7"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((client_names) : (((clients) --&gt; (NAME))))">
+<Attr>
+<Pos l="56" c="20" s="1"/>
+</Attr>
+<Id typref="1263997552" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:19:1" value="client_names">
+<Attr>
+<Pos l="56" c="7" s="12"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="3728010259">
+<Attr>
+<Pos l="56" c="30" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:19:2:1" value="clients">
+<Attr>
+<Pos l="56" c="22" s="7"/>
+</Attr>
+</Id>
+<Id typref="1333172640" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:19:2:2" value="NAME">
+<Attr>
+<Pos l="56" c="34" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((client_date) : (((clients) --&gt; (DATE))))">
+<Attr>
+<Pos l="57" c="19" s="1"/>
+</Attr>
+<Id typref="3624437299" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:20:1" value="client_date">
+<Attr>
+<Pos l="57" c="7" s="11"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="2016678416">
+<Attr>
+<Pos l="57" c="29" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:20:2:1" value="clients">
+<Attr>
+<Pos l="57" c="21" s="7"/>
+</Attr>
+</Id>
+<Id typref="1901520867" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:20:2:2" value="DATE">
+<Attr>
+<Pos l="57" c="33" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((client_form_payment) : (((clients) --&gt; (seq(FORM_PAYMENT)))))">
+<Attr>
+<Pos l="58" c="26" s="1"/>
+</Attr>
+<Id typref="935265508" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:21:1" value="client_form_payment">
+<Attr>
+<Pos l="58" c="7" s="19"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="128536607">
+<Attr>
+<Pos l="58" c="36" s="3"/>
+</Attr>
+<Id typref="178381824" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:21:2:1" value="clients">
+<Attr>
+<Pos l="58" c="28" s="7"/>
+</Attr>
+</Id>
+<Unary_Exp op="seq" typref="3587644180">
+<Attr>
+<Pos l="58" c="40" s="3"/>
+</Attr>
+<Id typref="2105584960" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:21:2:2:1" value="FORM_PAYMENT">
+<Attr>
+<Pos l="58" c="44" s="12"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((product_description) : (((products) --&gt; (DESCRIPTION))))">
+<Attr>
+<Pos l="61" c="26" s="1"/>
+</Attr>
+<Id typref="547942047" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:22:1" value="product_description">
+<Attr>
+<Pos l="61" c="7" s="19"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="3366728740">
+<Attr>
+<Pos l="61" c="37" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:22:2:1" value="products">
+<Attr>
+<Pos l="61" c="28" s="8"/>
+</Attr>
+</Id>
+<Id typref="1425327831" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:22:2:2" value="DESCRIPTION">
+<Attr>
+<Pos l="61" c="41" s="11"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((product_color) : (((products) --&gt; (COLOR))))">
+<Attr>
+<Pos l="62" c="20" s="1"/>
+</Attr>
+<Id typref="135881862" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:23:1" value="product_color">
+<Attr>
+<Pos l="62" c="7" s="13"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="1593117821">
+<Attr>
+<Pos l="62" c="31" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:23:2:1" value="products">
+<Attr>
+<Pos l="62" c="22" s="8"/>
+</Attr>
+</Id>
+<Id typref="3494839870" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:23:2:2" value="COLOR">
+<Attr>
+<Pos l="62" c="35" s="5"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((product_amount) : (((products) --&gt; ((NAT-{0})))))">
+<Attr>
+<Pos l="63" c="21" s="1"/>
+</Attr>
+<Id typref="2777243425" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:24:1" value="product_amount">
+<Attr>
+<Pos l="63" c="7" s="14"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="2426748706">
+<Attr>
+<Pos l="63" c="32" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:24:2:1" value="products">
+<Attr>
+<Pos l="63" c="23" s="8"/>
+</Attr>
+</Id>
+<Id typref="3603043417" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:24:2:2" value="NAT1">
+<Attr>
+<Pos l="63" c="36" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((product_enable) : (((products) --&gt; (BOOL))))">
+<Attr>
+<Pos l="64" c="21" s="1"/>
+</Attr>
+<Id typref="2128445171" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:25:1" value="product_enable">
+<Attr>
+<Pos l="64" c="7" s="14"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="3436989222">
+<Attr>
+<Pos l="64" c="32" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:25:2:1" value="products">
+<Attr>
+<Pos l="64" c="23" s="8"/>
+</Attr>
+</Id>
+<Id typref="4282494527" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:25:2:2" value="BOOL">
+<Attr>
+<Pos l="64" c="36" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((product_image) : (((products) --&gt; (IMAGE))))">
+<Attr>
+<Pos l="65" c="20" s="1"/>
+</Attr>
+<Id typref="311430270" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:26:1" value="product_image">
+<Attr>
+<Pos l="65" c="7" s="13"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="2535410309">
+<Attr>
+<Pos l="65" c="31" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:26:2:1" value="products">
+<Attr>
+<Pos l="65" c="22" s="8"/>
+</Attr>
+</Id>
+<Id typref="233640502" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:26:2:2" value="IMAGE">
+<Attr>
+<Pos l="65" c="35" s="5"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((product_name) : (((products) --&gt; (NAME))))">
+<Attr>
+<Pos l="66" c="20" s="1"/>
+</Attr>
+<Id typref="3222554324" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:27:1" value="product_name">
+<Attr>
+<Pos l="66" c="7" s="12"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="2032877189">
+<Attr>
+<Pos l="66" c="31" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:27:2:1" value="products">
+<Attr>
+<Pos l="66" c="22" s="8"/>
+</Attr>
+</Id>
+<Id typref="1333172640" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:27:2:2" value="NAME">
+<Attr>
+<Pos l="66" c="35" s="4"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":" initialTag="((product_category) : (((products) --&gt; (PROD_CATEGORY))))">
+<Attr>
+<Pos l="67" c="23" s="1"/>
+</Attr>
+<Id typref="4133146409" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:28:1" value="product_category">
+<Attr>
+<Pos l="67" c="7" s="16"/>
+</Attr>
+</Id>
+<Binary_Exp op="--&gt;" typref="606824858">
+<Attr>
+<Pos l="67" c="34" s="3"/>
+</Attr>
+<Id typref="462456746" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:28:2:1" value="products">
+<Attr>
+<Pos l="67" c="25" s="8"/>
+</Attr>
+</Id>
+<Id typref="1805217633" tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:5:1:28:2:2" value="PROD_CATEGORY">
+<Attr>
+<Pos l="67" c="38" s="13"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Nary_Pred>
+<Tag goalTag="Invariant is preserved">
+<Nary_Pred op="&amp;"/>
+</Tag>
+</Binary_Pred>
+</Sub_Calculus>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessConstraints</Tag>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;"/>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessProperties</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Hypothesis/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id typref="178381824" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:1:1:1" value="USER">
+<Attr>
+<Pos l="12" c="10" s="4"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN">
+<Id typref="178381824" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:1:1:1" value="USER">
+<Attr>
+<Pos l="12" c="10" s="4"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="12" c="16" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="12" c="5" s="4"/>
+</Attr>
+<Id typref="178381824" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:1:1:1" value="USER">
+<Attr>
+<Pos l="12" c="10" s="4"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:1:2" value="500">
+<Attr>
+<Pos l="12" c="18" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id typref="1417232700" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:2:1:1" value="STORE">
+<Attr>
+<Pos l="13" c="12" s="5"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN">
+<Id typref="1417232700" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:2:1:1" value="STORE">
+<Attr>
+<Pos l="13" c="12" s="5"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="13" c="19" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="13" c="7" s="4"/>
+</Attr>
+<Id typref="1417232700" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:2:1:1" value="STORE">
+<Attr>
+<Pos l="13" c="12" s="5"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:2:2" value="500">
+<Attr>
+<Pos l="13" c="21" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id typref="462456746" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:3:1:1" value="PRODUCT">
+<Attr>
+<Pos l="14" c="12" s="7"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN">
+<Id typref="462456746" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:3:1:1" value="PRODUCT">
+<Attr>
+<Pos l="14" c="12" s="7"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="14" c="21" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="14" c="7" s="4"/>
+</Attr>
+<Id typref="462456746" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:3:1:1" value="PRODUCT">
+<Attr>
+<Pos l="14" c="12" s="7"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:3:2" value="500">
+<Attr>
+<Pos l="14" c="23" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id typref="1805217633" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:4:1:1" value="PROD_CATEGORY">
+<Attr>
+<Pos l="15" c="12" s="13"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN">
+<Id typref="1805217633" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:4:1:1" value="PROD_CATEGORY">
+<Attr>
+<Pos l="15" c="12" s="13"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="15" c="27" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="15" c="7" s="4"/>
+</Attr>
+<Id typref="1805217633" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:4:1:1" value="PROD_CATEGORY">
+<Attr>
+<Pos l="15" c="12" s="13"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:4:2" value="500">
+<Attr>
+<Pos l="15" c="29" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id typref="3147958767" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:5:1:1" value="ADDRESS">
+<Attr>
+<Pos l="16" c="12" s="7"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN">
+<Id typref="3147958767" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:5:1:1" value="ADDRESS">
+<Attr>
+<Pos l="16" c="12" s="7"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="16" c="21" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="16" c="7" s="4"/>
+</Attr>
+<Id typref="3147958767" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:5:1:1" value="ADDRESS">
+<Attr>
+<Pos l="16" c="12" s="7"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:5:2" value="500">
+<Attr>
+<Pos l="16" c="23" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id typref="1333172640" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:6:1:1" value="NAME">
+<Attr>
+<Pos l="17" c="12" s="4"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN">
+<Id typref="1333172640" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:6:1:1" value="NAME">
+<Attr>
+<Pos l="17" c="12" s="4"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="17" c="18" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="17" c="7" s="4"/>
+</Attr>
+<Id typref="1333172640" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:6:1:1" value="NAME">
+<Attr>
+<Pos l="17" c="12" s="4"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:6:2" value="500">
+<Attr>
+<Pos l="17" c="20" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id typref="1901520867" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:7:1:1" value="DATE">
+<Attr>
+<Pos l="18" c="12" s="4"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN">
+<Id typref="1901520867" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:7:1:1" value="DATE">
+<Attr>
+<Pos l="18" c="12" s="4"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="18" c="18" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="18" c="7" s="4"/>
+</Attr>
+<Id typref="1901520867" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:7:1:1" value="DATE">
+<Attr>
+<Pos l="18" c="12" s="4"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:7:2" value="500">
+<Attr>
+<Pos l="18" c="20" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id typref="1425327831" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:8:1:1" value="DESCRIPTION">
+<Attr>
+<Pos l="19" c="12" s="11"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN">
+<Id typref="1425327831" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:8:1:1" value="DESCRIPTION">
+<Attr>
+<Pos l="19" c="12" s="11"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="19" c="25" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="19" c="7" s="4"/>
+</Attr>
+<Id typref="1425327831" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:8:1:1" value="DESCRIPTION">
+<Attr>
+<Pos l="19" c="12" s="11"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:8:2" value="500">
+<Attr>
+<Pos l="19" c="27" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id typref="3494839870" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:9:1:1" value="COLOR">
+<Attr>
+<Pos l="20" c="12" s="5"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN">
+<Id typref="3494839870" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:9:1:1" value="COLOR">
+<Attr>
+<Pos l="20" c="12" s="5"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="20" c="19" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="20" c="7" s="4"/>
+</Attr>
+<Id typref="3494839870" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:9:1:1" value="COLOR">
+<Attr>
+<Pos l="20" c="12" s="5"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:9:2" value="500">
+<Attr>
+<Pos l="20" c="21" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id typref="233640502" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:10:1:1" value="IMAGE">
+<Attr>
+<Pos l="21" c="12" s="5"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN">
+<Id typref="233640502" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:10:1:1" value="IMAGE">
+<Attr>
+<Pos l="21" c="12" s="5"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+<Binary_Pred op="=&gt;">
+<Exp_Comparison op="=">
+<Attr>
+<Pos l="21" c="19" s="1"/>
+</Attr>
+<Unary_Exp op="card" typref="2701647786">
+<Attr>
+<Pos l="21" c="7" s="4"/>
+</Attr>
+<Id typref="233640502" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:10:1:1" value="IMAGE">
+<Attr>
+<Pos l="21" c="12" s="5"/>
+</Attr>
+</Id>
+</Unary_Exp>
+<Integer_Literal typref="2701647786" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:10:2" value="500">
+<Attr>
+<Pos l="21" c="21" s="3"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Nary_Pred op="&amp;">
+<Binary_Pred op="&amp;">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+<Exp_Comparison op=":">
+<Id typref="2105584960" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:11:1:1" value="FORM_PAYMENT">
+<Attr>
+<Pos l="22" c="12" s="12"/>
+</Attr>
+</Id>
+<Unary_Exp op="FIN">
+<Id typref="2105584960" tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:3:1:11:1:1" value="FORM_PAYMENT">
+<Attr>
+<Pos l="22" c="12" s="12"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+<Nary_Pred op="&amp;"/>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Binary_Pred>
+</Nary_Pred>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInvariant</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;"/>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInitialisation</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="cst"/>
+<Definition name="lprp"/>
+<Definition name="inprp"/>
+<Definition name="inext"/>
+<Definition name="seext"/>
+<Goal>
+<Tag goalTag="Well definedness">
+<Nary_Pred op="&amp;">
+<Nary_Pred op="&amp;"/>
+</Nary_Pred>
+</Tag>
+</Goal>
+</Proof_Obligation>
+<TypeInfos>
+<Type id="2701647786">
+<Id tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:5:1:1" value="INTEGER"/>
+</Type>
+<Type id="178381824">
+<Unary_Exp op="POW">
+<Id tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:5:2:1:1" value="USER"/>
+</Unary_Exp>
+</Type>
+<Type id="1417232700">
+<Unary_Exp op="POW">
+<Id tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:5:3:1:1" value="STORE"/>
+</Unary_Exp>
+</Type>
+<Type id="462456746">
+<Unary_Exp op="POW">
+<Id tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:5:4:1:1" value="PRODUCT"/>
+</Unary_Exp>
+</Type>
+<Type id="1805217633">
+<Unary_Exp op="POW">
+<Id tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:5:5:1:1" value="PROD_CATEGORY"/>
+</Unary_Exp>
+</Type>
+<Type id="3147958767">
+<Unary_Exp op="POW">
+<Id tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:5:6:1:1" value="ADDRESS"/>
+</Unary_Exp>
+</Type>
+<Type id="1333172640">
+<Unary_Exp op="POW">
+<Id tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:5:7:1:1" value="NAME"/>
+</Unary_Exp>
+</Type>
+<Type id="1901520867">
+<Unary_Exp op="POW">
+<Id tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:5:8:1:1" value="DATE"/>
+</Unary_Exp>
+</Type>
+<Type id="1425327831">
+<Unary_Exp op="POW">
+<Id tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:5:9:1:1" value="DESCRIPTION"/>
+</Unary_Exp>
+</Type>
+<Type id="3494839870">
+<Unary_Exp op="POW">
+<Id tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:5:10:1:1" value="COLOR"/>
+</Unary_Exp>
+</Type>
+<Type id="233640502">
+<Unary_Exp op="POW">
+<Id tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:5:11:1:1" value="IMAGE"/>
+</Unary_Exp>
+</Type>
+<Type id="2105584960">
+<Unary_Exp op="POW">
+<Id tag="J:\ExternalDevelopment\UFPE\2019.1\sistemasCriticos\Projeto\AtelierB\Project\projeto_m_proB.bxml:1:5:12:1:1" value="FORM_PAYMENT"/>
+</Unary_Exp>
+</Type>
+<Type id="178381824">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:3:1:1:1" value="USER"/>
+</Unary_Exp>
+</Type>
+<Type id="1417232700">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:3:2:1:1" value="STORE"/>
+</Unary_Exp>
+</Type>
+<Type id="462456746">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:3:3:1:1" value="PRODUCT"/>
+</Unary_Exp>
+</Type>
+<Type id="1805217633">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:3:4:1:1" value="PROD_CATEGORY"/>
+</Unary_Exp>
+</Type>
+<Type id="3147958767">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:3:5:1:1" value="ADDRESS"/>
+</Unary_Exp>
+</Type>
+<Type id="1333172640">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:3:6:1:1" value="NAME"/>
+</Unary_Exp>
+</Type>
+<Type id="1901520867">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:3:7:1:1" value="DATE"/>
+</Unary_Exp>
+</Type>
+<Type id="1425327831">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:3:8:1:1" value="DESCRIPTION"/>
+</Unary_Exp>
+</Type>
+<Type id="3494839870">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:3:9:1:1" value="COLOR"/>
+</Unary_Exp>
+</Type>
+<Type id="233640502">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:3:10:1:1" value="IMAGE"/>
+</Unary_Exp>
+</Type>
+<Type id="2105584960">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m_ctx.bxml:1:3:11:1:1" value="FORM_PAYMENT"/>
+</Unary_Exp>
+</Type>
+<Type id="664455449">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:1:1" value="USER"/>
+</Type>
+<Type id="178381824">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:2:1:1" value="USER"/>
+</Unary_Exp>
+</Type>
+<Type id="462456746">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:3:1:1" value="PRODUCT"/>
+</Unary_Exp>
+</Type>
+<Type id="256571598">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:4:1:1:1" value="USER"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:4:1:1:2:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:4:1:1:2:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="169888399">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:5:1:1:1" value="USER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:5:1:1:2" value="BOOL"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1417232700">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:6:1:1" value="STORE"/>
+</Unary_Exp>
+</Type>
+<Type id="1622375369">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:7:1:1:1" value="STORE"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:7:1:1:2" value="ADDRESS"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="946070850">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:8:1:1:1" value="STORE"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:8:1:1:2" value="NAME"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1875697570">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:9:1:1:1" value="STORE"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:9:1:1:2" value="USER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3297020668">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:10:1:1:1" value="STORE"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:10:1:1:2:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:10:1:1:2:1:2" value="PRODUCT"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1632172156">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:11:1:1:1" value="STORE"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:11:1:1:2:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:11:1:1:2:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1668877385">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:12:1:1:1" value="USER"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:12:1:1:2:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:12:1:1:2:1:2" value="ADDRESS"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1263997552">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:13:1:1:1" value="USER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:13:1:1:2" value="NAME"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3624437299">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:14:1:1:1" value="USER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:14:1:1:2" value="DATE"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="935265508">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:15:1:1:1" value="USER"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:15:1:1:2:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:15:1:1:2:1:2" value="FORM_PAYMENT"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3222554324">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:16:1:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:16:1:1:2" value="NAME"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="547942047">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:17:1:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:17:1:1:2" value="DESCRIPTION"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="135881862">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:18:1:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:18:1:1:2" value="COLOR"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2777243425">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:19:1:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:19:1:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2128445171">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:20:1:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:20:1:1:2" value="BOOL"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="311430270">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:21:1:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:21:1:1:2" value="IMAGE"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="4133146409">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:22:1:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:22:1:1:2" value="PROD_CATEGORY"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1587956313">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:23:1:1:1" value="USER"/>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="837154996">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:24:1:1:1:1" value="USER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:24:1:1:1:2" value="BOOL"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="4282494527">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:25:1:1" value="BOOL"/>
+</Unary_Exp>
+</Type>
+<Type id="464656857">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:26:1:1:1" value="PRODUCT"/>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="931778955">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:27:1:1:1:1" value="USER"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:27:1:1:1:2:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:27:1:1:1:2:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2426748706">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:28:1:1:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:28:1:1:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3603043417">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:29:1:1" value="INTEGER"/>
+</Unary_Exp>
+</Type>
+<Type id="3046043386">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:30:1:1:1:1" value="STORE"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:30:1:1:1:2" value="ADDRESS"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3147958767">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:31:1:1" value="ADDRESS"/>
+</Unary_Exp>
+</Type>
+<Type id="4263164695">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:32:1:1:1:1" value="STORE"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:32:1:1:1:2" value="NAME"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1333172640">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:33:1:1" value="NAME"/>
+</Unary_Exp>
+</Type>
+<Type id="3945494711">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:34:1:1:1:1" value="STORE"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:34:1:1:1:2" value="USER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1936207111">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:35:1:1:1:1" value="STORE"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:35:1:1:1:2:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:35:1:1:1:2:1:2" value="PRODUCT"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1489605026">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:36:1:1:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:36:1:1:1:2" value="PRODUCT"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2729942919">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:37:1:1:1:1" value="STORE"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:37:1:1:1:2:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:37:1:1:1:2:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3205131728">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:38:1:1:1:1" value="USER"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:38:1:1:1:2:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:38:1:1:1:2:1:2" value="ADDRESS"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2825433373">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:39:1:1:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:39:1:1:1:2" value="ADDRESS"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3728010259">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:40:1:1:1:1" value="USER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:40:1:1:1:2" value="NAME"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2016678416">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:41:1:1:1:1" value="USER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:41:1:1:1:2" value="DATE"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1901520867">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:42:1:1" value="DATE"/>
+</Unary_Exp>
+</Type>
+<Type id="128536607">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:43:1:1:1:1" value="USER"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:43:1:1:1:2:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:43:1:1:1:2:1:2" value="FORM_PAYMENT"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3587644180">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:44:1:1:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:44:1:1:1:2" value="FORM_PAYMENT"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2105584960">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:45:1:1" value="FORM_PAYMENT"/>
+</Unary_Exp>
+</Type>
+<Type id="3366728740">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:46:1:1:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:46:1:1:1:2" value="DESCRIPTION"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1425327831">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:47:1:1" value="DESCRIPTION"/>
+</Unary_Exp>
+</Type>
+<Type id="1593117821">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:48:1:1:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:48:1:1:1:2" value="COLOR"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3494839870">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:49:1:1" value="COLOR"/>
+</Unary_Exp>
+</Type>
+<Type id="3436989222">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:50:1:1:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:50:1:1:1:2" value="BOOL"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2535410309">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:51:1:1:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:51:1:1:1:2" value="IMAGE"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="233640502">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:52:1:1" value="IMAGE"/>
+</Unary_Exp>
+</Type>
+<Type id="2032877189">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:53:1:1:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:53:1:1:1:2" value="NAME"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="606824858">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:54:1:1:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:54:1:1:1:2" value="PROD_CATEGORY"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1805217633">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:55:1:1" value="PROD_CATEGORY"/>
+</Unary_Exp>
+</Type>
+<Type id="3817003670">
+<Unary_Exp op="POW">
+<Generic_Type tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:56:1:1"/>
+</Unary_Exp>
+</Type>
+<Type id="2701647786">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:57:1" value="INTEGER"/>
+</Type>
+<Type id="641307508">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:58:1:1" value="USER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:58:1:2" value="BOOL"/>
+</Binary_Exp>
+</Type>
+<Type id="2043437594">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:59:1" value="BOOL"/>
+</Type>
+<Type id="1707133831">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:60:1" value="STORE"/>
+</Type>
+<Type id="1065263764">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:61:1" value="ADDRESS"/>
+</Type>
+<Type id="2144979833">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:62:1" value="NAME"/>
+</Type>
+<Type id="4177572026">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:63:1:1" value="STORE"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:63:1:2" value="ADDRESS"/>
+</Binary_Exp>
+</Type>
+<Type id="3743976663">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:64:1:1" value="STORE"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:64:1:2" value="NAME"/>
+</Binary_Exp>
+</Type>
+<Type id="959437431">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:65:1:1" value="STORE"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:65:1:2" value="USER"/>
+</Binary_Exp>
+</Type>
+<Type id="2490484156">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:66:1:1" value="STORE"/>
+<Unary_Exp op="POW">
+<Generic_Type tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:66:1:2:1"/>
+</Unary_Exp>
+</Binary_Exp>
+</Type>
+<Type id="3909217715">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:67:1:1" value="STORE"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:67:1:2:1:1" value="INTEGER"/>
+<Generic_Type tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:67:1:2:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Type>
+<Type id="1847249677">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:68:1:1:1" value="INTEGER"/>
+<Generic_Type tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:68:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="1919669063">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:69:1:1" value="STORE"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:69:1:2:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:69:1:2:1:2" value="PRODUCT"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Type>
+<Type id="1537272993">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:70:1:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:70:1:1:2" value="PRODUCT"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="4255322998">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:71:1" value="DATE"/>
+</Type>
+<Type id="2909344576">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:72:1:1" value="USER"/>
+<Unary_Exp op="POW">
+<Generic_Type tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:72:1:2:1"/>
+</Unary_Exp>
+</Binary_Exp>
+</Type>
+<Type id="3466625107">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:73:1:1" value="USER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:73:1:2" value="NAME"/>
+</Binary_Exp>
+</Type>
+<Type id="1930871504">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:74:1:1" value="USER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:74:1:2" value="DATE"/>
+</Binary_Exp>
+</Type>
+<Type id="2610752870">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:75:1:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:75:1:1:2" value="ADDRESS"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="716272517">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:76:1:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:76:1:1:2" value="FORM_PAYMENT"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="2474517008">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:77:1:1" value="USER"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:77:1:2:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:77:1:2:1:2" value="ADDRESS"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Type>
+<Type id="4106310239">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:78:1:1" value="USER"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:78:1:2:1:1" value="INTEGER"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:78:1:2:1:2" value="FORM_PAYMENT"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Type>
+<Type id="3438081305">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:79:1" value="PRODUCT"/>
+</Type>
+<Type id="1113464492">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:80:1" value="DESCRIPTION"/>
+</Type>
+<Type id="1415405573">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:81:1" value="COLOR"/>
+</Type>
+<Type id="172879373">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:82:1" value="IMAGE"/>
+</Type>
+<Type id="2235206434">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:83:1" value="PROD_CATEGORY"/>
+</Type>
+<Type id="3389490916">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:84:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:84:1:2" value="DESCRIPTION"/>
+</Binary_Exp>
+</Type>
+<Type id="3857609149">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:85:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:85:1:2" value="COLOR"/>
+</Binary_Exp>
+</Type>
+<Type id="502686946">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:86:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:86:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Type>
+<Type id="2310057574">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:87:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:87:1:2" value="BOOL"/>
+</Binary_Exp>
+</Type>
+<Type id="466314181">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:88:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:88:1:2" value="IMAGE"/>
+</Binary_Exp>
+</Type>
+<Type id="840407877">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:89:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:89:1:2" value="NAME"/>
+</Binary_Exp>
+</Type>
+<Type id="4191402842">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:90:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:90:1:2" value="PROD_CATEGORY"/>
+</Binary_Exp>
+</Type>
+<Type id="1214911819">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:91:1:1" value="USER"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:91:1:2:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:91:1:2:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Type>
+<Type id="3381467609">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:92:1" value="FORM_PAYMENT"/>
+</Type>
+<Type id="3741025735">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:93:1:1" value="STORE"/>
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:93:1:2:1:1" value="PRODUCT"/>
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:93:1:2:1:2" value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Binary_Exp>
+</Type>
+<Type id="949986794">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Id tag="J:/ExternalDevelopment/UFPE/2019.1/sistemasCriticos/Projeto/AtelierB/Project\projeto_m.bxml:1:8:94:1:1:1" value="INTEGER"/>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+</Proof_Obligations>

@@ -1,0 +1,82 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(41) & WellDefinednessProperties.11,(_f(51) & _f(50) & _f(49) & _f(48) & _f(47) & _f(46) & _f(45) & _f(44) & _f(43) & _f(42) & _f(52) => _f(63));
+_f(1) & _f(2) & _f(41) & WellDefinednessProperties.10,(_f(51) & _f(50) & _f(49) & _f(48) & _f(47) & _f(46) & _f(45) & _f(44) & _f(43) & _f(52) => _f(62));
+_f(1) & _f(2) & _f(41) & WellDefinednessProperties.9,(_f(51) & _f(50) & _f(49) & _f(48) & _f(47) & _f(46) & _f(45) & _f(44) & _f(52) => _f(61));
+_f(1) & _f(2) & _f(41) & WellDefinednessProperties.8,(_f(51) & _f(50) & _f(49) & _f(48) & _f(47) & _f(46) & _f(45) & _f(52) => _f(60));
+_f(1) & _f(2) & _f(41) & WellDefinednessProperties.7,(_f(51) & _f(50) & _f(49) & _f(48) & _f(47) & _f(46) & _f(52) => _f(59));
+_f(1) & _f(2) & _f(41) & WellDefinednessProperties.6,(_f(51) & _f(50) & _f(49) & _f(48) & _f(47) & _f(52) => _f(58));
+_f(1) & _f(2) & _f(41) & WellDefinednessProperties.5,(_f(51) & _f(50) & _f(49) & _f(48) & _f(52) => _f(57));
+_f(1) & _f(2) & _f(41) & WellDefinednessProperties.4,(_f(51) & _f(50) & _f(49) & _f(52) => _f(56));
+_f(1) & _f(2) & _f(41) & WellDefinednessProperties.3,(_f(51) & _f(50) & _f(52) => _f(55));
+_f(1) & _f(2) & _f(41) & WellDefinednessProperties.2,(_f(51) & _f(52) => _f(54));
+_f(1) & _f(2) & _f(41) & WellDefinednessProperties.1,(_f(52) => _f(53))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+USER: FIN(INTEGER) & not(USER = {}) & STORE: FIN(INTEGER) & not(STORE = {}) & PRODUCT: FIN(INTEGER) & not(PRODUCT = {}) & PROD_CATEGORY: FIN(INTEGER) & not(PROD_CATEGORY = {}) & ADDRESS: FIN(INTEGER) & not(ADDRESS = {}) & NAME: FIN(INTEGER) & not(NAME = {}) & DATE: FIN(INTEGER) & not(DATE = {}) & DESCRIPTION: FIN(INTEGER) & not(DESCRIPTION = {}) & COLOR: FIN(INTEGER) & not(COLOR = {}) & IMAGE: FIN(INTEGER) & not(IMAGE = {}) & FORM_PAYMENT: FIN(INTEGER) & not(FORM_PAYMENT = {});
+((card(USER)) = (500)) & ((card(STORE)) = (500)) & ((card(PRODUCT)) = (500)) & ((card(PROD_CATEGORY)) = (500)) & ((card(ADDRESS)) = (500)) & ((card(NAME)) = (500)) & ((card(DATE)) = (500)) & ((card(DESCRIPTION)) = (500)) & ((card(COLOR)) = (500)) & ((card(IMAGE)) = (500)) & ((card(FORM_PAYMENT)) = (500));
+((admin0) : (USER));
+users : POW( USER) & admins : POW( users) & ((admins) : (FIN(admins))) & clients : POW( users) & store_managers : POW( users) & logged : users +-> BOOL & dom(logged) = users & ((logged) : (((users) --> (BOOL)))) & ((logged) : (((dom(logged)) +-> (ran(logged))))) & stores : POW( STORE) & products : POW( PRODUCT) & ((products) : (FIN(products))) & carts : clients +-> ((products) +-> ((NAT-{0}))) & dom(carts) = clients & ((carts) : (((clients) --> (((products) +-> ((NAT-{0}))))))) & clients_product_bought : clients +-> ((products) +-> ((NAT-{0}))) & dom(clients_product_bought) = clients & ((clients_product_bought) : (((clients) --> (((products) +-> ((NAT-{0}))))))) & store_addresses : stores +-> ADDRESS & dom(store_addresses) = stores & ((store_addresses) : (((stores) --> (ADDRESS)))) & store_names : stores +-> NAME & dom(store_names) = stores & ((store_names) : (((stores) --> (NAME)))) & store_responsible : stores +-> USER & dom(store_responsible) = stores & ((store_responsible) : (((stores) --> (USER)))) & store_products : stores +-> seq(PRODUCT) & dom(store_products) = stores & ((store_products) : (((stores) --> (seq(PRODUCT))))) & store_bought_products : stores +-> ((products) +-> ((NAT-{0}))) & dom(store_bought_products) = stores & ((store_bought_products) : (((stores) --> (((products) +-> ((NAT-{0}))))))) & client_addresses : clients +-> seq(ADDRESS) & dom(client_addresses) = clients & ((client_addresses) : (((clients) --> (seq(ADDRESS))))) & client_names : clients +-> NAME & dom(client_names) = clients & ((client_names) : (((clients) --> (NAME)))) & client_date : clients +-> DATE & dom(client_date) = clients & ((client_date) : (((clients) --> (DATE)))) & client_form_payment : clients +-> seq(FORM_PAYMENT) & dom(client_form_payment) = clients & ((client_form_payment) : (((clients) --> (seq(FORM_PAYMENT))))) & product_description : products +-> DESCRIPTION & dom(product_description) = products & ((product_description) : (((products) --> (DESCRIPTION)))) & product_color : products +-> COLOR & dom(product_color) = products & ((product_color) : (((products) --> (COLOR)))) & product_amount : products +-> (NAT-{0}) & dom(product_amount) = products & ((product_amount) : (((products) --> ((NAT-{0}))))) & product_enable : products +-> BOOL & dom(product_enable) = products & ((product_enable) : (((products) --> (BOOL)))) & product_image : products +-> IMAGE & dom(product_image) = products & ((product_image) : (((products) --> (IMAGE)))) & product_name : products +-> NAME & dom(product_name) = products & ((product_name) : (((products) --> (NAME)))) & product_category : products +-> PROD_CATEGORY & dom(product_category) = products & ((product_category) : (((products) --> (PROD_CATEGORY))));
+{} : POW( USER);
+{} : POW( {});
+(({}) : (FIN({})));
+{} : {} +-> BOOL;
+dom({}) = {};
+(({}) : ((({}) --> (BOOL))));
+(({}) : (((dom({})) +-> (ran({})))));
+{} : POW( STORE);
+{} : POW( PRODUCT);
+{} : {} +-> (({}) +-> ((NAT-{0})));
+(({}) : ((({}) --> ((({}) +-> ((NAT-{0})))))));
+{} : {} +-> ADDRESS;
+(({}) : ((({}) --> (ADDRESS))));
+{} : {} +-> NAME;
+(({}) : ((({}) --> (NAME))));
+{} : {} +-> USER;
+(({}) : ((({}) --> (USER))));
+{} : {} +-> seq(PRODUCT);
+(({}) : ((({}) --> (seq(PRODUCT)))));
+{} : {} +-> seq(ADDRESS);
+(({}) : ((({}) --> (seq(ADDRESS)))));
+{} : {} +-> DATE;
+(({}) : ((({}) --> (DATE))));
+{} : {} +-> seq(FORM_PAYMENT);
+(({}) : ((({}) --> (seq(FORM_PAYMENT)))));
+{} : {} +-> DESCRIPTION;
+(({}) : ((({}) --> (DESCRIPTION))));
+{} : {} +-> COLOR;
+(({}) : ((({}) --> (COLOR))));
+{} : {} +-> (NAT-{0});
+(({}) : ((({}) --> ((NAT-{0})))));
+{} : {} +-> IMAGE;
+(({}) : ((({}) --> (IMAGE))));
+{} : {} +-> PROD_CATEGORY;
+(({}) : ((({}) --> (PROD_CATEGORY))));
+btrue;
+((card(IMAGE)) = (500));
+((card(COLOR)) = (500));
+((card(DESCRIPTION)) = (500));
+((card(DATE)) = (500));
+((card(NAME)) = (500));
+((card(ADDRESS)) = (500));
+((card(PROD_CATEGORY)) = (500));
+((card(PRODUCT)) = (500));
+((card(STORE)) = (500));
+((card(USER)) = (500));
+"Well definedness";
+((USER) : (FIN(USER)));
+((STORE) : (FIN(STORE)));
+((PRODUCT) : (FIN(PRODUCT)));
+((PROD_CATEGORY) : (FIN(PROD_CATEGORY)));
+((ADDRESS) : (FIN(ADDRESS)));
+((NAME) : (FIN(NAME)));
+((DATE) : (FIN(DATE)));
+((DESCRIPTION) : (FIN(DESCRIPTION)));
+((COLOR) : (FIN(COLOR)));
+((IMAGE) : (FIN(IMAGE)));
+((FORM_PAYMENT) : (FIN(FORM_PAYMENT)))
+END
+&
+THEORY EnumerateX
+END
