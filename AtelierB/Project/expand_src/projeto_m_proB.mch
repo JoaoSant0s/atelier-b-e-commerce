@@ -9,16 +9,16 @@ SEES projeto_m_ctx
 EXTENDS projeto_m
 
 PROPERTIES
-    card ( USER ) = 500
-    & card ( STORE ) = 500
-    & card ( PRODUCT ) = 500
-    & card ( PROD_CATEGORY ) = 500
-    & card ( ADDRESS ) = 500
-    & card ( NAME ) = 500
-    & card ( DATE ) = 500
-    & card ( DESCRIPTION ) = 500
-    & card ( COLOR ) = 500
-    & card ( IMAGE ) = 500
-    & card ( FORM_PAYMENT ) = 500
+    card ( USER ) = 20
+    & card ( STORE ) = 5
+    & card ( PRODUCT ) = 5
+    & card ( PROD_CATEGORY ) = 3
+    & card ( ADDRESS ) = 10
+    & card ( NAME ) = 5
+    & card ( DATE ) = 10
+    & card ( DESCRIPTION ) = 100
+    & card ( COLOR ) = 10
+    & card ( IMAGE ) = 4
+    & card ( FORM_PAYMENT ) = 3
 
 END

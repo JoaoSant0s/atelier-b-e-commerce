@@ -118,20 +118,6 @@ OPERATIONS
     END
     ;
 
-    // ADMIN (cc, current_admin, aa=admin)
-    add_admin ( cc , aa ) =
-    PRE
-        ( cc : USER & cc : users & cc : admins & logged ( cc ) = TRUE )
-        & aa : USER & aa /: users & aa /: admins
-        //New Conditions
-        & logged \/ { aa |-> FALSE } : users \/ { aa } --> BOOL
-    THEN
-        users := users \/ { aa }
-        || admins := admins \/ { aa }
-        || logged := logged \/ { ( aa |-> FALSE ) }
-    END
-    ;
-
     // STORE MANAGERS (ss=store manager, aa = admin)
     add_store_manager ( ss , aa ) =
     PRE
@@ -164,6 +150,7 @@ OPERATIONS
     PRE
         ( ss : STORE & ss /: stores )
         & ( rr : USER & rr : store_managers )
+        & ss /: dom ( store_responsible )
         & aa : ADDRESS
         & nn : NAME
         & ad : admins
@@ -173,21 +160,21 @@ OPERATIONS
         & store_names \/ { ss |-> nn } : stores \/ { ss } --> NAME
         & store_responsible \/ { ss |-> rr } : stores \/ { ss } --> USER
         & store_products \/ { ss |-> {} } : stores \/ { ss } --> seq ( PRODUCT )
-        & store_bought_products : stores \/ { ss } --> ( products +-> NAT1 )
     THEN
         stores := stores \/ { ss }
         || store_addresses := store_addresses \/ { ( ss |-> aa ) }
         || store_names := store_names \/ { ( ss |-> nn ) }
         || store_responsible := store_responsible \/ { ( ss |-> rr ) }
         || store_products := store_products \/ { ( ss |-> <> ) }
+        || store_bought_products ( ss ) := {}
     END
     ;
-    remove_store ( ss , rr ) =
+    remove_store ( ss ) =
     PRE
         ( ss : STORE & ss : stores )
-        & ( rr : USER & rr : users & rr = store_responsible ( ss ) & rr : store_managers )
-        & rr : dom ( logged )
-        & logged ( rr ) = TRUE
+        & ss : dom ( store_responsible )
+        & store_responsible ( ss ) : dom ( logged )
+        & logged ( store_responsible ( ss ) ) = TRUE
         // New Conditions
         & ss : dom ( store_addresses )
         & store_addresses - { ss |-> store_addresses ( ss ) } : stores - { ss } --> ADDRESS
@@ -208,12 +195,12 @@ OPERATIONS
         ( cc : USER & cc /: clients & cc /: users & cc /= admin0 )
         & nn : NAME
         & dd : DATE
+        & ! ff . ( ff : dom ( logged ) => logged ( ff ) = FALSE )
         // New Conditions
-        & logged \/ { cc |-> FALSE } : users \/ { cc } --> BOOL
-        & carts \/ { cc |-> {} } : clients \/ { cc } --> ( products +-> NAT1 )
         & client_names \/ { cc |-> nn } : clients \/ { cc } --> NAME
+        & carts \/ { cc |-> {} } : clients \/ { cc } --> ( products +-> NAT1 )
         & client_date \/ { cc |-> dd } : clients \/ { cc } --> DATE
-        & clients_product_bought : clients \/ { cc } --> ( products +-> NAT1 )
+        & logged \/ { cc |-> FALSE } : users \/ { cc } --> BOOL
     THEN
         users := users \/ { cc }
         || clients := clients \/ { cc }
@@ -223,6 +210,7 @@ OPERATIONS
         || carts := carts \/ { ( cc |-> {} ) }
         || client_addresses ( cc ) := <>
         || client_form_payment ( cc ) := <>
+        || clients_product_bought ( cc ) := {}
     END
     ;
     remove_client ( cc , aa ) =
@@ -246,13 +234,13 @@ OPERATIONS
         || client_form_payment := client_form_payment - { ( cc |-> client_form_payment ( cc ) ) }
     END
     ;
-    // PRODUCT (pp=product, ss=storage, rr=responsible, nn=name, dd=description, color=color, aa= amount, ee=enable, ii=image, ct=category)
-    add_product ( pp , ss , rr , dd , cc , aa , ee , ii , nn , ct ) =
+    // PRODUCT (pp=product, ss=storage, nn=name, dd=description, color=color, aa= amount, ee=enable, ii=image, ct=category)
+    add_product ( pp , ss , dd , cc , aa , ee , ii , nn , ct ) =
     PRE
         pp : PRODUCT
         & ss : STORE & ss : stores
-        & rr : USER & rr : users & rr : store_managers & rr = store_responsible ( ss )
-        & logged ( rr ) = TRUE
+        & store_responsible ( ss ) : dom ( logged )
+        & logged ( store_responsible ( ss ) ) = TRUE
         & pp /: ran ( store_products ( ss ) )
         & dd : DESCRIPTION
         & cc : COLOR
@@ -285,25 +273,25 @@ OPERATIONS
         || store_products ( ss ) := store_products ( ss ) <- pp
     END
     ;
-    remove_product ( ss , pp , rr ) =
+    remove_product ( ss , pp ) =
     PRE
-        ss : STORE & ss : stores & pp : ran ( store_products ( ss ) )
-        & rr : USER & rr : users & store_responsible ( ss ) = rr & logged ( rr ) = TRUE
-        & ( pp : PRODUCT & pp : products )
-        //New conditions
+        pp : products
+        & ss : stores
+        & store_responsible ( ss ) : dom ( logged )
+        & logged ( store_responsible ( ss ) ) = TRUE
+        & pp : ran ( store_products ( ss ) )
+        //New conditions    
         & carts : clients --> ( products - { pp } +-> NAT1 )
-        & pp : dom ( product_name )
-        & pp : dom ( product_description )
-        & product_name - { pp |-> product_name ( pp ) } : products - { pp } --> NAME
+        & clients_product_bought : clients --> ( products - { pp } +-> NAT1 )
+        & store_bought_products : stores --> ( products - { pp } +-> NAT1 )
         & product_description - { pp |-> product_description ( pp ) } : products - { pp } --> DESCRIPTION
         & product_color - { pp |-> product_color ( pp ) } : products - { pp } --> COLOR
         & product_amount - { pp |-> product_amount ( pp ) } : products - { pp } --> NAT1
         & product_enable - { pp |-> product_enable ( pp ) } : products - { pp } --> BOOL
         & product_image - { pp |-> product_image ( pp ) } : products - { pp } --> IMAGE
+        & product_name - { pp |-> product_name ( pp ) } : products - { pp } --> NAME
         & product_category - { pp |-> product_category ( pp ) } : products - { pp } --> PROD_CATEGORY
         & store_products - { ss |-> store_products ( ss ) } : stores --> seq ( PRODUCT )
-        & clients_product_bought : clients --> ( products - { pp } +-> NAT1 )
-        & store_bought_products : stores --> ( products - { pp } +-> NAT1 )
     THEN
         products := products - { pp }
         || product_name := product_name - { ( pp |-> product_name ( pp ) ) }
@@ -322,11 +310,9 @@ OPERATIONS
         pp : PRODUCT & pp : products
         & aa : NAT1
         & cc : USER & cc : clients & logged ( cc ) = TRUE
-        & carts ( cc ) /= {}
         & product_amount ( pp ) >= aa
         & product_enable ( pp ) = TRUE
         // New Conditions
-        & pp : dom ( carts ( cc ) )
         & carts <+ { cc |-> ( carts ( cc ) <+ { pp |-> carts ( cc ) ( pp ) + aa } ) } : clients --> ( products +-> NAT1 )
     THEN
         IF pp : dom ( carts ( cc ) ) THEN
@@ -341,50 +327,52 @@ OPERATIONS
         pp : PRODUCT & pp : products
         & aa : NAT1
         & cc : USER & cc : clients & logged ( cc ) = TRUE
-        & carts ( cc ) /= {}
+        & cc : dom ( carts )
         & pp : dom ( carts ( cc ) )
         & carts ( cc ) ( pp ) >= aa
         & product_enable ( pp ) = TRUE
         //New Conditions
         & carts <+ { cc |-> ( carts ( cc ) <+ { pp |-> carts ( cc ) ( pp ) - aa } ) } : clients --> ( products +-> NAT1 )
     THEN
-        carts ( cc ) := carts ( cc ) <+ { ( pp |-> carts ( cc ) ( pp ) - aa ) }
+        IF carts ( cc ) ( pp ) = aa THEN
+            carts ( cc ) := { pp } <<| carts ( cc )
+        ELSE
+            carts ( cc ) := carts ( cc ) <+ { ( pp |-> carts ( cc ) ( pp ) - aa ) }
+        END
+
+
     END
     ;
     // BUYING (cc=client, fp=form payment, aar=address)
-    default_buying_items ( cc , fp , add ) =
+    buying_items ( cc , fp , add ) =
     PRE
-        cc : USER & cc : clients & logged ( cc ) = TRUE
+        cc : clients & logged ( cc ) = TRUE
+        & cc : dom ( carts )
         & carts ( cc ) : FIN ( carts ( cc ) )
-        & carts ( cc ) /= {} & card ( carts ( cc ) ) > 0
+        & card ( carts ( cc ) ) > 0
         & fp : FORM_PAYMENT
         & add : ADDRESS
-        & clients_product_bought ( cc ) : FIN ( clients_product_bought ( cc ) )
-        & card ( clients_product_bought ( cc ) ) > 0
         & card ( products ) > 0
-        & client_form_payment ( cc ) : seq ( ran ( client_form_payment ( cc ) ) )
-        & client_addresses ( cc ) : seq ( ran ( client_addresses ( cc ) ) )
+        & card ( dom ( carts ( cc ) ) ) > 0
     THEN
         ANY pp , ss
-        WHERE ss : STORE & ss : stores & pp : PRODUCT & pp : products & pp : dom ( carts ( cc ) ) & pp : ran ( store_products ( ss ) ) & pp : dom ( store_bought_products ( ss ) )
-        & clients_product_bought <+ { cc |-> ( clients_product_bought ( cc ) \/ { pp |-> carts ( cc ) ( pp ) } ) } : clients --> ( products +-> NAT1 )
-        & store_bought_products <+ { ss |-> ( store_bought_products ( ss ) \/ { pp |-> carts ( cc ) ( pp ) } ) } : stores --> ( products +-> NAT1 ) THEN
-            IF pp : dom ( clients_product_bought ( cc ) )
-                & clients_product_bought <+ { cc |-> ( clients_product_bought ( cc ) <+ { pp |-> clients_product_bought ( cc ) ( pp ) + carts ( cc ) ( pp ) } ) } : clients --> ( products +-> NAT1 )
-                & store_bought_products <+ { ss |-> ( store_bought_products ( ss ) <+ { pp |-> store_bought_products ( ss ) ( pp ) + carts ( cc ) ( pp ) } ) } : stores --> ( products +-> NAT1 ) THEN
+        WHERE ss : stores & pp : products
+            & ss : dom ( store_products ) & ss : dom ( store_bought_products )
+            & pp : dom ( carts ( cc ) ) & pp : ran ( store_products ( ss ) ) THEN
+            carts ( cc ) := {}
+            || IF pp : dom ( clients_product_bought ( cc ) ) THEN
                 clients_product_bought ( cc ) := clients_product_bought ( cc ) <+ { ( pp |-> clients_product_bought ( cc ) ( pp ) + carts ( cc ) ( pp ) ) }
                 || store_bought_products ( ss ) := store_bought_products ( ss ) <+ { ( pp |-> store_bought_products ( ss ) ( pp ) + carts ( cc ) ( pp ) ) }
-            ELSE
-                clients_product_bought ( cc ) := clients_product_bought ( cc ) \/ { ( pp |-> carts ( cc ) ( pp ) ) }
-                || store_bought_products ( ss ) := store_bought_products ( ss ) \/ { ( pp |-> carts ( cc ) ( pp ) ) }
-            END
-            || carts ( cc ) := {}
+                ELSE
+                    clients_product_bought ( cc ) := clients_product_bought ( cc ) \/ { ( pp |-> carts ( cc ) ( pp ) ) }
+                    || store_bought_products ( ss ) := store_bought_products ( ss ) \/ { ( pp |-> carts ( cc ) ( pp ) ) }
+                END
             || IF fp /: ran ( client_form_payment ( cc ) ) THEN
-                client_form_payment ( cc ) := client_form_payment ( cc ) <- fp
-            END
+                    client_form_payment ( cc ) := client_form_payment ( cc ) <- fp
+                END
             || IF add /: ran ( client_addresses ( cc ) ) THEN
-                client_addresses ( cc ) := client_addresses ( cc ) <- add
-            END
+                    client_addresses ( cc ) := client_addresses ( cc ) <- add
+                END
         END
     END
     ;
@@ -395,30 +383,10 @@ OPERATIONS
     PRE
         cc : USER & cc : clients & cc : users & logged ( cc ) = TRUE
         & clients_product_bought ( cc ) : FIN ( clients_product_bought ( cc ) )
+        & cc : dom ( clients_product_bought )
         & card ( clients_product_bought ( cc ) ) > 0
         & card ( products ) > 0
     THEN
-        ANY ii
-        WHERE ii : dom ( clients_product_bought ( cc ) ) & ii : dom ( product_name ) THEN
-            v_bought_items_by_client := product_name ( ii )
-        END
-    END
-    ;
-    // most bought items by category
-    v_most_bought_items_by_category <-- most_bought_items_by_category ( ss , cc ) =
-    PRE
-        ss : STORE & ss : stores & cc : PROD_CATEGORY
-        & store_responsible ( ss ) : dom ( logged )
-        & logged ( store_responsible ( ss ) ) = TRUE
-    THEN
-        ANY pp
-        WHERE pp : PRODUCT & pp : products & pp : ran ( store_products ( ss ) ) & product_category ( pp ) = cc
-            & not ( ran ( store_bought_products ( ss ) ) = {} )
-            & ran ( store_bought_products ( ss ) ) /\ NATURAL : FIN ( NATURAL )
-            & { pp } = store_bought_products ( ss ) ~ [ { max ( ran ( store_bought_products ( ss ) ) ) } ]
-            THEN
-
-            v_most_bought_items_by_category :=  product_name ( pp )
-        END
+        v_bought_items_by_client := clients_product_bought ( cc )
     END
 END
